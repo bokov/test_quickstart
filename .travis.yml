@@ -1,7 +1,7 @@
 language: r
 #sudo: false
 pandoc_version: 2.3
-script: Rscript --verbose --no-environ --no-restore --no-save ci_parent_test.R
+script: Rscript ci_parent_test.R
 cache: 
   packages: true
   directories:
