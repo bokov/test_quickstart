@@ -1,6 +1,6 @@
 # config
 ripcord <- 'https://github.com/bokov/ripcord/blob/%s/quickstart.R';
-test_branch <- 'enh_wincompat';
+test_branch <- 'master';
 ripcord <- sprintf(ripcord,test_branch);
 
 # test localdata
