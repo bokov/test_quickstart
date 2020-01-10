@@ -1,3 +1,19 @@
+Title: RipCord (Test Suite)
+Authors@R: c(person("Alex", "Bokov", email = "alex.bokov@gmail.com"
+             ,role = c("aut", "cre")
+             ,comment=c(ORCID="0000-0002-0511-9815")))
+Version: 0.0.1
+Date: 2020-01-10
+Description: These are the CI test scripts for the RipCord rapid deployment 
+  system for R informatics projects (https://github.com/bokov/ripcord). 
+  RipCord is launched by running a GitHub-hosted script via URL from inside an
+  R session. It then copies itself over to the current folder, asks the user
+  some questions about the location of their data-files, and writes 
+  configuration files accordingly. Because of this deployment strategy, RipCord
+  needs to be tested externally, to simulate a user pulling it into an existing
+  (possibly but not necessarily empty) directory. The ci_parent_test.R script 
+  does this by creating subdirectories, copying auto-response scripts to allow
+  batch execution, and then pulling RipCord into each of these directories.
 Imports:
   pander,
   dplyr,
