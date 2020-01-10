@@ -9,7 +9,7 @@ file.copy('localdata','test_localdata/',recursive = TRUE);
 file.copy(list.files(patt='\\.auto\\.menu.*\\.R',all=TRUE),'test_localdata/');
 file.copy('localdataonefile.auto.confch.R','test_localdata/');
 setwd('test_localdata/');
-source('ripcord');
+source(ripcord);
 source('ci_test.R');
 setwd('..');
 c()
